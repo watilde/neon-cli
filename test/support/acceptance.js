@@ -13,9 +13,13 @@ export function setup() {
 
     this.cwd = tmpobj.name;
     process.stdout.write("AAAAAAAAAAAAAAAA\n");
+    process.stdout.write(NODE);
+    process.stdout.write("\n");
+    process.stdout.write([NEON].concat(args));
+    process.stdout.write("\n");
+    process.stdout.write(this.cwd);
+    process.stdout.write("\n");
     this.spawn = (args) => spawn(NODE, [NEON].concat(args), { cwd: this.cwd });
-    process.stdout.write("BBBBBBBBBBBBBBB\n");
-    console.log("AAA", NODE, [NEON].concat(args), { cwd: this.cwd })
   });
 
   afterEach(function() {

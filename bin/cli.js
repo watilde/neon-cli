@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-console.log("AAAAAAAAAAAAAAA");
 var path = require('path')
 var minimist = require('minimist');
 var pkg = require(path.resolve(__dirname, '../package.json'));
@@ -12,7 +11,7 @@ if (process.argv.length < 3) {
 var command = process.argv[2];
 var args = minimist(process.argv.slice(3));
 var pwd = process.cwd();
-console.log("BBBBBBBBBBBBBBBBBBBB");
+
 switch (command) {
 case 'version':
   console.log(pkg.version)

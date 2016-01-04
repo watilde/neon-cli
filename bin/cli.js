@@ -8,6 +8,8 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
+process.stdout.write("CCCCCCCCCCCCCCCCCC\n");
+
 var command = process.argv[2];
 var args = minimist(process.argv.slice(3));
 var pwd = process.cwd();

@@ -15,6 +15,7 @@ export function setup() {
     process.stdout.write("AAAAAAAAAAAAAAAA\n");
     this.spawn = (args) => spawn(NODE, [NEON].concat(args), { cwd: this.cwd });
     process.stdout.write("BBBBBBBBBBBBBBB\n");
+    console.log("AAA", NODE, [NEON].concat(args), { cwd: this.cwd })
   });
 
   afterEach(function() {

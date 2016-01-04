@@ -12,7 +12,9 @@ export function setup() {
     tmpobj = tmp.dirSync({ unsafeCleanup: true });
 
     this.cwd = tmpobj.name;
+    process.stdout.write("AAAAAAAAAAAAAAAA\n");
     this.spawn = (args) => spawn(NODE, [NEON].concat(args), { cwd: this.cwd });
+    process.stdout.write("BBBBBBBBBBBBBBB\n");
   });
 
   afterEach(function() {

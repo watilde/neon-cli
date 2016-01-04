@@ -1,3 +1,4 @@
+console.log("AAAAAAAAAAAAAAAA");
 import fs from 'fs';
 import path from 'path';
 import handlebars from 'handlebars';
@@ -50,7 +51,7 @@ function guessAuthor() {
     };
   }
 }
-
+console.log("BBBBBBBBBBBBBBBBB");
 let style = {
   project: chalk.cyan.bold,
   command: chalk.green.bold,

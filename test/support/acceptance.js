@@ -3,7 +3,7 @@ import path from 'path';
 import { spawn } from 'nexpect';
 
 const NODE = process.execPath;
-const NEON = path.resolve('bin/cli.js');
+const NEON = path.resolve('bin', 'cli.js');
 
 export function setup() {
   let tmpobj;
